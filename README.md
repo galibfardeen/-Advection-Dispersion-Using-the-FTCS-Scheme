@@ -5,19 +5,18 @@ Developed as part of my MSc coursework *“Numerical Modelling in Water and Sedi
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 The Advection–Dispersion Equation (ADE) describes solute movement under the combined effects of **advection** and **dispersion**:
 
-\[
-\frac{\partial C}{\partial t} + u\frac{\partial C}{\partial x} = D\frac{\partial^2 C}{\partial x^2}
-\]
+∂C/∂t + u·∂C/∂x = D·∂²C/∂x²
+
 
 Two approaches are implemented:
 1. **Analytical solution** for a pulse input.  
-2. **Numerical solution** using the **Forward-Time Central-Space (FTCS)** scheme.
+2. **Numerical solution** using the **Forward-Time Central-Space (FTCS)** finite-difference scheme.
 
-The numerical model is validated against the analytical profile to assess **stability**, **dispersion effects**, and **temporal evolution**.
+The numerical model is validated against the analytical profile to assess **stability**, **dispersion**, and **temporal evolution**.
 
 ---
 
@@ -33,13 +32,19 @@ The numerical model is validated against the analytical profile to assess **stab
 
 ---
 
-## 📊 Results
+##  Results
 
-- FTCS scheme reproduces analytical profiles accurately under stability limits (α ≤ 0.5).  
-- Dispersion broadens solute spread; advection controls transport speed.  
-- Demonstrates core numerical concepts used in larger-scale CFD and LES modeling.
+### Analytical Solution
+The analytical solution shows smooth Gaussian concentration profiles that advect and disperse over time.
 
-![ADE Simulation](assets/ade_plot_example.png)
+![Analytical ADE Plot](assets/ade_analytical_plot.jpg)
+
+---
+
+### Numerical Solution (FTCS Scheme)
+The FTCS numerical model reproduces the solute transport behavior with acceptable accuracy when stability criteria are maintained (α ≤ 0.5).
+
+![Numerical ADE Plot](assets/ade_numerical.jpg)
 
 ---
 
@@ -47,13 +52,13 @@ The numerical model is validated against the analytical profile to assess **stab
 
 | File | Description |
 |------|--------------|
-| `ADE_analytical.m` | Analytical solution for pulse input |
+| `ADE_analytical.m` | Analytical solution for a pulse input |
 | `ADE_numerical_FTCS.m` | Finite-difference solution using FTCS |
-| `assets/` | Contains result figures |
+| `assets/` | Contains output figures and plots |
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Md. Asadullahil Galib Fardin**  
 Graduate Research Assistant, IWFM, BUET  
