@@ -61,6 +61,6 @@ The FTCS numerical model reproduces the solute transport behavior with acceptabl
 ##  Author
 
 **Md. Asadullahil Galib Fardin**  
-Graduate Research Assistant, IWFM, BUET  
+Research Assistant, IWFM, BUET  
 📧 [fardin.civilworks@gmail.com](mailto:fardin.civilworks@gmail.com)  
 🌐 [github.com/galibfardeen](https://github.com/galibfardeen)
